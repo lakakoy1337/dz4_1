@@ -1,12 +1,9 @@
+n = int(input("Введите число: "))
+def counter(n):
+    count = 0
+    while n > 0:
+        n = n // 10
+        count = count + 1
+    return (count)
 
-print("1 число:")
-A = int(input())
-print("2 число:")
-B = int(input())
-print("3 число:")
-C = int(input())
-
-def minimum(A, B, C):
-    return min(A, B, C)
-
-print("Самое мелкое: ", minimum(A, B, C))
+print("Количество цифр в числе:", counter(n))
