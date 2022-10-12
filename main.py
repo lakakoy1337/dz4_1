@@ -1,12 +1,14 @@
-// Создайте функцию для поиска минимума среди трех чисел (три параметра функции).
-print("1 число:")
-A = int(input())
-print("2 число:")
-B = int(input())
-print("3 число:")
-C = int(input())
+// Напишите функцию, которая вычисляет факториал натурального числа N.
+print("Какое число в этот раз?")
 
-def minimum(A, B, C):
-    return min(A, B, C)
 
-print("Самое мелкое: ", minimum(A, B, C))
+n = int(input())
+
+def factorial(n):
+    pr = 1
+    for i in range(2,n+1):
+        pr=pr*i
+
+    return pr
+
+print(factorial(n))
