@@ -1,12 +1,13 @@
+// Создайте функцию, которая вычисляет сумму всех чисел от 1 до N. N — параметр функции.
+print("Введи скок чисел надо:")
+n = int(input())
 
-print("1 число:")
-A = int(input())
-print("2 число:")
-B = int(input())
-print("3 число:")
-C = int(input())
 
-def minimum(A, B, C):
-    return min(A, B, C)
+def sum(n):
+    summa = 0
+    for i in range(1, n + 1):
+        summa = summa + i
+    return summa
 
-print("Самое мелкое: ", minimum(A, B, C))
+
+print(sum(n))
